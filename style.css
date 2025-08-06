@@ -298,3 +298,38 @@ body {
 .btn-footer:hover {
   background-color: #0056b3;
 }
+/* Features */
+.features {
+  text-align: center;
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.feature-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px; /* زيادة المسافة بين العناصر */
+  margin-top: 40px;
+}
+
+.feature-box {
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.4s;
+}
+
+.feature-box:hover {
+  transform: scale(1.1);
+}
+
+.feature-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.feature-box p {
+  font-size: 16px;
+}
