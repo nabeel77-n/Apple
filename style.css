@@ -333,3 +333,92 @@ body {
 .feature-box p {
   font-size: 16px;
 }
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+
+  .header, .navbar ul, .feature-icons, .product-gallery, .testimonial-gallery, .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info, .social-media {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .feature-box, .product, .testimonial, .footer-columns div {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn-primary, .btn-secondary, .btn-footer {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .contact input, .contact textarea {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .footer input {
+    width: 90%;
+    max-width: 250px;
+  }
+}
+/* Menu toggle (hamburger icon) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
